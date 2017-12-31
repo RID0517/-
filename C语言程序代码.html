@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+</head>
+<body>
+<p>
+#include<stdio.h><br>
+int main()<br>
+{<br>
+&nbsp &nbsp  int fac(int n);<br>
+&nbsp &nbsp  int n,y;<br>
+&nbsp &nbsp  printf("input an integer number:");<br>
+&nbsp &nbsp  scanf("%d",&n);<br>
+&nbsp &nbsp  int i;<br>
+&nbsp &nbsp  for(i=1;i<=n;i++) y+=fac(i);<br>
+&nbsp &nbsp  printf("1!到%d！的和为：%d",n,y);<br>
+&nbsp &nbsp  return 0;<br>
+}<br>
+<br>
+int fac(int n)<br>
+{<br>
+&nbsp &nbsp  int f;<br>
+&nbsp &nbsp  if(n<0) <br>
+&nbsp &nbsp &nbsp &nbsp  printf("data error!");<br>
+&nbsp &nbsp  else if(n==0||n==1)<br>
+&nbsp &nbsp &nbsp &nbsp  f=1;<br>
+&nbsp &nbsp  else<br>
+&nbsp &nbsp &nbsp &nbsp  f=fac(n-1)*n;<br>
+&nbsp &nbsp  return(f);<br>
+}<br>
+</p>
+</body>
+</html>
