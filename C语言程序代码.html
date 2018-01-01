@@ -22,12 +22,9 @@ int main()<br>
 int fac(int n)<br>
 {<br>
 &nbsp &nbsp  int f;<br>
-&nbsp &nbsp  if(n<0) <br>
-&nbsp &nbsp &nbsp &nbsp  printf("data error!");<br>
-&nbsp &nbsp  else if(n==0||n==1)<br>
-&nbsp &nbsp &nbsp &nbsp  f=1;<br>
-&nbsp &nbsp  else<br>
-&nbsp &nbsp &nbsp &nbsp  f=fac(n-1)*n;<br>
+&nbsp &nbsp  if(n<0) &nbsp printf("data error!");<br>
+&nbsp &nbsp  else if(n==0||n==1) &nbsp f=1;<br>
+&nbsp &nbsp  else &nbsp f=fac(n-1)*n;<br>
 &nbsp &nbsp  return(f);<br>
 }<br>
 </p>
